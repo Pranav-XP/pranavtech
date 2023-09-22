@@ -2,16 +2,7 @@ import React from "react";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import { logo } from "@/public/images/util";
 
