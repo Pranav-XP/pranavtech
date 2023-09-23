@@ -3,11 +3,12 @@
 import Image from "next/image";
 import React from "react";
 import { ThemeSwitch } from "./theme-switch";
-import { logo } from "@/public/images/util";
+import { avatarImg, logo } from "@/public/images/util";
 import Sidebar from "./sidebar";
 import { routes } from "@/lib/utils";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const animateInVariant = {
   initial: {
@@ -24,7 +25,6 @@ const animateInVariant = {
 };
 
 const Navbar = () => {
-  let animationDelay = 0;
   return (
     <nav
       className="w-full p-2 sm:p-5 h-20 border items-center 
@@ -65,6 +65,10 @@ const Navbar = () => {
         ))}
         <ThemeSwitch />
       </div>
+      <Avatar>
+        <Image src={avatarImg} alt="Memeoji of Pranav" />
+        <AvatarFallback>PC</AvatarFallback>
+      </Avatar>
     </nav>
   );
 };

@@ -8,24 +8,26 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex justify-between">
-      <aside className="hidden sm:flex pl-2 fixed left-1 top-1/2">
-        <LeftSide />
-      </aside>
+    <main className="flex flex-col">
+      <div className="flex justify-between">
+        <aside className="hidden sm:flex pl-2 fixed left-1 top-1/2">
+          <LeftSide />
+        </aside>
 
-      <section className="sm:grow grow-0 pt-20 px-10 text-center">
-        <Banner />
-        <Project />
-        <Tools />
-      </section>
+        <section className="sm:grow grow-0 pt-20 px-10 text-center">
+          <Banner />
+          <Project />
+          <Tools />
+        </section>
 
-      <aside className="hidden sm:flex pl-2 fixed right-2 top-1/2">
-        <RightSide />
-      </aside>
+        <aside className="hidden sm:flex pl-2 fixed right-2 top-1/2">
+          <RightSide />
+        </aside>
+      </div>
       <footer
-        className="w-full mt-2 p-2 fixed bottom-0 border
+        className="w-full mt-2 p-2 bottom-0 border
     border-b-stone-300 shadow-lg shadow-stone-300 dark:border-b-stone-600  
-    dark:shadow-navbarShadow z-50 bg-background 
+    dark:shadow-navbarShadow bg-background 
     text-foreground flex justify-center items-centers gap-x-2 text-sm font-mono"
       >
         <span className="">Built with</span>
