@@ -61,7 +61,7 @@ const Banner = () => {
                 className=" dark:shadow-none shadow-stone-500 shadow-md text-md active:shadow-inset w-52 h-14 font-titleFont font-bold
                     rounded-md tracking-wide active:bg-foreground md:hover:drop-shadow-glow md:transition md:duration-700 md:ease-in-out"
               >
-                <a href="https://github.com/Pranav-XP/pranavtechportfolio">
+                <a href="https://github.com/Pranav-XP/pranavtech">
                   View Website Code
                 </a>
               </Button>
