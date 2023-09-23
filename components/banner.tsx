@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 const Banner = () => {
   return (
-    <section className="flex-col items-center sm:flex pb-20">
+    <section className="flex-col items-center sm:flex pt-20 pb-10 md:pb-20">
       <div className="flex gap-1 items-center">
         <div className="flex flex-col text-left gap-y-5">
           <motion.h3
@@ -87,6 +87,7 @@ const Banner = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.9 }}
+        className="flex items-center justify-center"
       >
         <Image
           className="sm:hidden md:hover:drop-shadow-glow transition duration-700 ease-in-out"

@@ -74,6 +74,10 @@ module.exports = {
         inset:
           "inset 0 -5px 20px -10px rgba(75, 75, 75, 0.9),inset 0 5px 30px -10px rgba(75, 75, 75, 0.9)",
         navbarShadow: "0 10px 30px -10px rgba(75, 75, 75, 0.9)",
+        glow: [
+          "0 0px 10px rgba(255,255, 255, 0.35)",
+          "0 0px 10px rgba(255, 255,255, 0.2)",
+        ],
       },
       dropShadow: {
         glow: [

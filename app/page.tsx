@@ -1,6 +1,8 @@
 import Banner from "@/components/banner";
 import LeftSide from "@/components/leftside";
+import Project from "@/components/project";
 import RightSide from "@/components/rightside";
+import Tools from "@/components/tools";
 import { nextJSLogoDark, nextJSLogoLight } from "@/public/images/util";
 import Image from "next/image";
 
@@ -11,15 +13,17 @@ export default function Home() {
         <LeftSide />
       </aside>
 
-      <section className="grow pt-20 px-20 text-center">
+      <section className="sm:grow grow-0 pt-20 px-10 text-center">
         <Banner />
+        <Project />
+        <Tools />
       </section>
 
       <aside className="hidden sm:flex pl-2 fixed right-2 top-1/2">
         <RightSide />
       </aside>
       <footer
-        className="w-full p-2 fixed bottom-0 border
+        className="w-full mt-2 p-2 fixed bottom-0 border
     border-b-stone-300 shadow-lg shadow-stone-300 dark:border-b-stone-600  
     dark:shadow-navbarShadow z-50 bg-background 
     text-foreground flex justify-center items-centers gap-x-2 text-sm font-mono"
