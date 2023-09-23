@@ -19,7 +19,7 @@ const RightSide = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.1 }}
         >
-          <MdEmail size={40}></MdEmail>
+          <MdEmail size={35}></MdEmail>
         </motion.span>
       </a>
     </div>

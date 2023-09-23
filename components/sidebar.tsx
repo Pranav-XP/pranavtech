@@ -1,5 +1,8 @@
 import React from "react";
 import { Menu } from "lucide-react";
+import { MdEmail } from "react-icons/md";
+import { VscGithubInverted } from "react-icons/vsc";
+import { AiFillLinkedin } from "react-icons/ai";
 
 import {
   Sheet,
@@ -10,7 +13,6 @@ import {
 import Image from "next/image";
 import { logo } from "@/public/images/util";
 import { ThemeSwitch } from "./theme-switch";
-import Link from "next/link";
 import { NavRoute, routes } from "@/lib/utils";
 
 const Sidebar = () => {
@@ -21,7 +23,7 @@ const Sidebar = () => {
           <Menu size={20} />
         </SheetTrigger>
         <SheetContent className="w-[250px] h-full" side={"left"}>
-          <div className="flex flex-col gap-y-10 justify-between pt-5 relative">
+          <div className="flex flex-col gap-y-10 items-center justify-between pt-5">
             <Image
               className="dark:border-0 dark:shadow-none rounded-md border border-stone-400 shadow-sm shadow-neutral-600"
               src={logo}
@@ -29,7 +31,7 @@ const Sidebar = () => {
               width={40}
               height={40}
             />
-            <div className="flex flex-col gap-y-10">
+            <div className=" text-left flex flex-col gap-y-10">
               {routes.map((route: NavRoute) => (
                 <SheetClose key={route.href}>
                   <a className="p-5 rounded-md w-fit" href={route.href}>
@@ -37,6 +39,25 @@ const Sidebar = () => {
                   </a>
                 </SheetClose>
               ))}
+              <div>
+                <div className="shadow-footerShadow w-full h-5 py-7 flex items-center justify-center gap-3">
+                  <a href="https://github.com/Pranav-XP">
+                    <span>
+                      <VscGithubInverted size={30}></VscGithubInverted>
+                    </span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/pranav-chand-16777318b/">
+                    <span>
+                      <AiFillLinkedin size={40}></AiFillLinkedin>
+                    </span>
+                  </a>
+                  <a href="mailto:pranavchand777@gmail.com">
+                    <span>
+                      <MdEmail size={40}></MdEmail>
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
             <ThemeSwitch />
           </div>

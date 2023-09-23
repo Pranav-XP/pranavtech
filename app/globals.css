@@ -95,3 +95,27 @@ body,
     display: unset;
   }
 }
+
+#bannerName::after {
+  content: '|';
+  animation: blinkCursor 1.2s infinite;
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+::selection {
+  background: #fff;
+  color: #111111;
+}

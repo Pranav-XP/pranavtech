@@ -1,3 +1,4 @@
+import Banner from "@/components/banner";
 import LeftSide from "@/components/leftside";
 import RightSide from "@/components/rightside";
 import { nextJSLogoDark, nextJSLogoLight } from "@/public/images/util";
@@ -10,9 +11,11 @@ export default function Home() {
         <LeftSide />
       </aside>
 
-      <section className="grow h-full pt-20 px-20 text-center">Middle</section>
+      <section className="grow pt-20 px-20 text-center">
+        <Banner />
+      </section>
 
-      <aside className="hidden sm:flex pl-2 fixed right-2 bottom-1/4">
+      <aside className="hidden sm:flex pl-2 fixed right-2 top-1/2">
         <RightSide />
       </aside>
       <footer
