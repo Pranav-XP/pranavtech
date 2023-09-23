@@ -39,7 +39,13 @@ const Navbar = () => {
         transition={{ duration: 1 }}
         className="hidden sm:flex"
       >
-        <Image src={logo} width={40} height={40} alt="logo"></Image>
+        <Image
+          className="border border-stone-400 rounded-md"
+          src={logo}
+          width={40}
+          height={40}
+          alt="logo"
+        ></Image>
       </motion.div>
 
       <div className="hidden sm:flex sm:items-center sm:justify-between gap-x-10">
@@ -50,6 +56,7 @@ const Navbar = () => {
             animate="animate"
             custom={index}
             key={route.href}
+            className="hover:underline"
           >
             <Link className="font-bold" href={route.href}>
               {route.label}
