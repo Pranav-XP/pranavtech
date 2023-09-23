@@ -13,7 +13,7 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-3xl font-mono font-extrabold tracking-wide"
+          className="text-2xl md:text-3xl font-mono font-extrabold tracking-wide"
         >
           Bula, my name is<br></br>
         </motion.h3>
@@ -57,8 +57,8 @@ const Banner = () => {
             transition={{ duration: 0.5, delay: 0.9 }}
           >
             <Button
-              className=" text-md active:shadow-inset w-52 h-14 font-titleFont font-bold border border-textLight
-                    rounded-md tracking-wide active:bg-foreground md:hover:drop-shadow-glow transition duration-300 ease-in-out"
+              className=" dark:shadow-none shadow-stone-500 shadow-md text-md active:shadow-inset w-52 h-14 font-titleFont font-bold
+                    rounded-md tracking-wide active:bg-foreground md:hover:drop-shadow-glow md:transition md:duration-700 md:ease-in-out"
             >
               <a href="https://github.com/Pranav-XP/pranavtechportfolio">
                 View Website Code
