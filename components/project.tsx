@@ -32,7 +32,7 @@ const Project = () => {
                 <div className="p-2"></div>
                 {project.toolsApplied.map((tool) => (
                   <span
-                    className="hidden md:inline md:text-center md:bg-stone-500 md:m-1 md:p-2 p-1 rounded-sm"
+                    className="hidden text-stone-800 font-bold border border-stone-300 md:inline md:text-center md:bg-stone-300 md:m-1 md:p-2 p-1 rounded-sm"
                     key={tool.id}
                   >
                     {tool.skill}

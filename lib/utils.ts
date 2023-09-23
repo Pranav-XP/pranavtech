@@ -38,7 +38,7 @@ export const projects = [
       },
       {
         id: 3,
-        skill: "MySQL Database",
+        skill: "MySQL",
       },
       {
         id: 4,
