@@ -81,6 +81,9 @@ module.exports = {
           "0 0px 65px rgba(255, 255,255, 0.2)",
         ],
       },
+      fontFamily: {
+        mono: ["Consolas", "ui-monospace"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
