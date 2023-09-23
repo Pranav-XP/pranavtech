@@ -19,7 +19,7 @@ const Tools = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="w-full text-textLight font-medium flex flex-col gap-4"
+          className="w-full font-mono font-medium flex flex-col gap-4"
         >
           Technologies I have experience with:
           <ul className="max-w-[450px] grid grid-cols-3 justify-between gap-4">

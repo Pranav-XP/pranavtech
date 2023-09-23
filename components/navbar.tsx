@@ -27,7 +27,7 @@ const animateInVariant = {
 const Navbar = () => {
   return (
     <nav
-      className="w-full p-2 sm:p-5 h-20 border items-center 
+      className="w-full p-2 sm:p-5 h-20 border-b items-center 
     border-b-stone-300 shadow-lg shadow-stone-300 dark:border-b-stone-600  
     dark:shadow-navbarShadow fixed top-0 z-50 bg-background 
     text-foreground flex justify-between"

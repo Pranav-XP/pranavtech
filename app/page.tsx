@@ -25,7 +25,7 @@ export default function Home() {
         </aside>
       </div>
       <footer
-        className="w-full mt-2 p-2 bottom-0 border
+        className="w-full mt-2 p-2 bottom-0 border-t
     border-b-stone-300 shadow-lg shadow-stone-300 dark:border-b-stone-600  
     dark:shadow-navbarShadow bg-background 
     text-foreground flex justify-center items-centers gap-x-2 text-sm font-mono"
