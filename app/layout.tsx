@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Pranav Chand",
   description: "Pranav Chand software portfolio website",
+  icons: "",
 };
 
 export default function RootLayout({
@@ -18,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
