@@ -2,80 +2,56 @@
 
 import React from "react";
 import { BiLogoJava, BiLogoSpringBoot, BiGitBranch } from "react-icons/bi";
-import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
-import { SiMysql, SiVmware, SiTailwindcss } from "react-icons/si";
-import { CgWebsite } from "react-icons/cg";
+import { TbBrandCpp, TbBrandMysql, TbBrandNextjs } from "react-icons/tb";
+import {
+  SiMysql,
+  SiVmware,
+  SiTailwindcss,
+  SiSpringboot,
+  SiNextdotjs,
+  SiOracle,
+} from "react-icons/si";
+import { CgCPlusPlus, CgWebsite } from "react-icons/cg";
 import { motion } from "framer-motion";
+import { GitBranchIcon } from "lucide-react";
 
 const Tools = () => {
   return (
-    <section
-      id="tools"
-      className="px-10 pb-20 flex flex-col items-center justify-center"
-    >
+    <section id="tools" className="pb-20 flex flex-col items-center">
       <h1 className="text-3xl sm:text-5xl font-bold p-5">Tools</h1>
-      <div className="flex flex-col gap-16 py-5">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="w-full font-mono font-medium flex flex-col gap-4"
-        >
-          Technologies I have experience with:
-          <ul className="max-w-[450px] grid grid-cols-3 justify-between gap-4">
-            <li>
-              <span>
-                <BiLogoJava size={60}></BiLogoJava>
-              </span>
-            </li>
-            <li>
-              <span>
-                <BiLogoSpringBoot size={40}></BiLogoSpringBoot>
-              </span>
-              Springboot
-            </li>
-            <li>
-              <span>
-                <TbBrandCpp size={60}></TbBrandCpp>
-              </span>
-            </li>
-            <li>
-              <span>
-                <SiMysql size={60}></SiMysql>
-              </span>
-            </li>
-            <li>
-              <span>
-                <TbBrandNextjs size={40}></TbBrandNextjs>
-              </span>
-              NextJS
-            </li>
-            <li>
-              <span>
-                <CgWebsite size={40}></CgWebsite>
-              </span>
-              HTML-CSS
-            </li>
-            <li>
-              <span>
-                <BiGitBranch size={40}></BiGitBranch>
-              </span>
-              Git
-            </li>
-            <li>
-              <span>
-                <SiVmware size={60}></SiVmware>
-              </span>
-            </li>
-            <li>
-              <span>
-                <SiTailwindcss size={40}></SiTailwindcss>
-              </span>
-              TailwindCSS
-            </li>
-          </ul>
-        </motion.div>
-      </div>
+      <p className="pb-5 font-mono md:text-lg">
+        Technologies I am proficient with:
+      </p>
+      <ul className="flex md:px-20 gap-5 md:gap-10 items-center justify-evenly flex-wrap">
+        <li>
+          <BiLogoJava size={60} />
+        </li>
+        <li className="flex flex-col items-center justify-evenly">
+          <SiSpringboot size={50} />
+          <p className="text-sm dark:text-stone-200 font-mono">Springboot</p>
+        </li>
+        <li>
+          <CgCPlusPlus size={50} />
+        </li>
+        <li>
+          <SiNextdotjs size={50} />
+          <p className="text-sm dark:text-stone-200 font-mono">NextJS</p>
+        </li>
+        <li>
+          <SiMysql size={70} />
+        </li>
+        <li className="flex flex-col items-center">
+          <SiTailwindcss size={50} />
+          <p className="text-sm dark:text-stone-200 font-mono">Tailwind CSS</p>
+        </li>
+        <li className="flex flex-col items-center">
+          <GitBranchIcon size={50} />
+          <p className="text-sm dark:text-stone-200 font-mono">Git</p>
+        </li>
+        <li>
+          <SiVmware size={70} />
+        </li>
+      </ul>
     </section>
   );
 };

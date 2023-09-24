@@ -19,8 +19,8 @@ const Sidebar = () => {
   return (
     <div className="sm:hidden">
       <Sheet>
-        <SheetTrigger className="md:hidden pl-2">
-          <Menu size={20} />
+        <SheetTrigger className="md:hidden p-2">
+          <Menu size={30} />
         </SheetTrigger>
         <SheetContent className="w-[250px] h-full" side={"left"}>
           <div className="flex flex-col gap-y-10 items-center justify-between pt-5">

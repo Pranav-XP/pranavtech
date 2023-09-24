@@ -34,7 +34,7 @@ export const projects = [
       },
       {
         id: 2,
-        skill: "Prisma ORM",
+        skill: "Prisma",
       },
       {
         id: 3,

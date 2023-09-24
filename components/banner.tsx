@@ -23,9 +23,11 @@ const Banner = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}
             id="bannerName"
-            className="text-textLight font-titleFont font-black text-5xl"
+            className="font-black text-7xl"
           >
-            Pranav
+            <span className="bg-clip-text text-transparent bg-gradient-to-r dark:from-fuchsia-200 dark:to-purple-700 from-fuchsia-500 to-purple-700">
+              Pranav
+            </span>
           </motion.h1>
           <motion.span
             initial={{ y: 10, opacity: 0 }}
@@ -41,7 +43,6 @@ const Banner = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.9 }}
           >
-            {" "}
             Currently studying Software Engineering at the<br></br>
             <a
               className="text-textLight font-mono bg-bodyColor underline hover:underline-none hover:bg-textLight hover:text-bodyColor"
@@ -49,7 +50,7 @@ const Banner = () => {
             >
               University of the South Pacific!
             </a>
-            <br></br> This is my journey to becoming a fully fledged Engineer.{" "}
+            <br></br> This is my journey to becoming a fully fledged Engineer.
           </motion.p>
           <div className="pt-5">
             <motion.div
@@ -65,6 +66,12 @@ const Banner = () => {
                   View Website Code
                 </a>
               </Button>
+              <p className="text-sm text-stone-600 dark:text-zinc-400 py-3">
+                Need a website as cool as this one? Shoot me an{" "}
+                <a className="underline" href="mailto:pranavchand777@gmail.com">
+                  email.
+                </a>
+              </p>
             </motion.div>
           </div>
         </div>
