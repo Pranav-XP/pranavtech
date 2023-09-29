@@ -6,11 +6,11 @@ import React from "react";
 const Project = () => {
   return (
     <section id="projects" className="pb-10 mx-5">
-      <h1 className="text-3xl md:text-5xl font-bold p-5">Projects</h1>
-      <div className="flex flex-col md:flex-row items-center justify-center md:p-10">
+      <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
+      <div className="flex flex-col items-center justify-center md:p-5">
         {projects.map((project) => (
-          <div key={project.id}>
-            <h2 className="flex items-center gap-2 font-bold text-left hover:md:underline md:text-center text-xl md:text-3xl pb-5">
+          <div className="p-5" key={project.id}>
+            <h2 className="flex items-center gap-2 font-bold text-left hover:md:underline md:text-center text-xl md:text-3xl p-5">
               <a href={project.demoUrl}>{project.title}</a>
               <ExternalLink size={20} />
             </h2>
@@ -25,7 +25,7 @@ const Project = () => {
                 alt="Project image"
                 width={400}
               ></Image>
-              <div className="font-mono md:p-10 pb-2">
+              <div className="font-mono text-justify md:p-10 pb-2">
                 {project.description} <br />
                 <div className="flex flex-row gap-3">
                   {project.toolsApplied.map((tool) => (
@@ -37,7 +37,7 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-                <div className="underline justify-center md:justify-normal mt-2 md:mt-5 md:hover:underline flex flex-row gap-1 items-center">
+                <div className="underline font-semibold justify-center md:justify-normal mt-2 md:mt-5 md:hover:underline flex flex-row gap-1 items-center">
                   <a href={project.codeUrl}>Github</a>
                   <Github />
                 </div>
