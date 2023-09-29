@@ -25,7 +25,7 @@ const Project = () => {
                 alt="Project image"
                 width={400}
               ></Image>
-              <div className="font-mono text-justify md:p-10 pb-2">
+              <div className="font-mono md:p-10 pb-2">
                 {project.description} <br />
                 <div className="flex flex-row gap-3">
                   {project.toolsApplied.map((tool) => (

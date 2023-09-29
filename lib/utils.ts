@@ -57,7 +57,7 @@ export const projects = [
     codeUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
     screenshot: searchAlgoImg,
     description:
-      "Algorithm analysis terminal application. Applied binary search, linear search, interpolation search and jump search on large dataset. The performance of each algorithm was analysed and results were represented graphically using Matlab API.",
+      "Algorithm analysis terminal application. Performed analysis on binary, linear, interpolation and jump search on large dataset.",
     framework: "Java",
     toolsApplied: [
       {
