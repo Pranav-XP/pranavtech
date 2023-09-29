@@ -5,9 +5,9 @@ import React from "react";
 
 const Project = () => {
   return (
-    <section id="projects" className="pb-10 mx-5">
+    <section id="projects" className="pb-10">
       <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
-      <div className="flex flex-col items-center justify-center md:p-5">
+      <div className="flex flex-col items-center justify-center md:p-5 w-full">
         {projects.map((project) => (
           <div className="p-5" key={project.id}>
             <h2 className="flex items-center gap-2 font-bold text-left hover:md:underline md:text-center text-xl md:text-3xl p-5">

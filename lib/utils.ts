@@ -50,32 +50,32 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "Algorithm Analysis",
-  //   demoUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
-  //   codeUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
-  //   screenshot: searchAlgoImg,
-  //   description:
-  //     "Algorithm analysis terminal application. Performed analysis on binary, linear, interpolation and jump search on large dataset.",
-  //   framework: "Java",
-  //   toolsApplied: [
-  //     {
-  //       id: 1,
-  //       skill: "Java",
-  //     },
-  //     {
-  //       id: 2,
-  //       skill: "Algorithms",
-  //     },
-  //     {
-  //       id: 3,
-  //       skill: "Analysis",
-  //     },
-  //     {
-  //       id: 4,
-  //       skill: "Matlab",
-  //     },
-  //   ],
-  // },
+  {
+    id: 2,
+    title: "Algorithm Analysis",
+    demoUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
+    codeUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
+    screenshot: searchAlgoImg,
+    description:
+      "Algorithm analysis terminal application. Performed analysis on binary, linear, interpolation and jump search on large dataset.",
+    framework: "Java",
+    toolsApplied: [
+      {
+        id: 1,
+        skill: "Java",
+      },
+      {
+        id: 2,
+        skill: "Algorithms",
+      },
+      {
+        id: 3,
+        skill: "Analysis",
+      },
+      {
+        id: 4,
+        skill: "Matlab",
+      },
+    ],
+  },
 ];
