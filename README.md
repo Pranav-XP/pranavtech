@@ -2,6 +2,11 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## How I built It?
+The website is built using NextJS App Router. It makes use of NextJS inbuilt image and font optimizations for faster performance. Radix UI is integrated as headless UI library to faciliate accessibility needs. This website will actively be maintained by me. 
+
+Visit : https://www.pranavtech.dev
+
 ## Getting Started
 
 First, run the development server:
