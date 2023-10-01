@@ -57,7 +57,7 @@ export const projects = [
   {
     id: 3,
     title: "Starman",
-    demoUrl: "https://starman-vert.vercel.app/",
+    demoUrl: "https://starmanphotos.vercel.app",
     codeUrl: "https://github.com/Pranav-XP/nasagallery",
     screenshot: starmanImg,
     description:
