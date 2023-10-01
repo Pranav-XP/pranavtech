@@ -1,4 +1,8 @@
-import { newspapernotesImg, searchAlgoImg } from "@/public/images/util";
+import {
+  newspapernotesImg,
+  searchAlgoImg,
+  starmanImg,
+} from "@/public/images/util";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -47,6 +51,30 @@ export const projects = [
       {
         id: 5,
         skill: "NextJS",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Starman",
+    demoUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
+    codeUrl: "https://github.com/Pranav-XP/nasagallery",
+    screenshot: starmanImg,
+    description:
+      "A small gallery style app to practice Server Side data fetching on NextJS. Images supplied by NASA API.",
+    framework: "Java",
+    toolsApplied: [
+      {
+        id: 1,
+        skill: "NextJS",
+      },
+      {
+        id: 2,
+        skill: "REST API",
+      },
+      {
+        id: 3,
+        skill: "CSS",
       },
     ],
   },

@@ -5,6 +5,7 @@ import nextJSLogoLight from "./nextjs-logotype-light-background.svg";
 import newspapernotesImg from "./newspaper_notes_homescreen.png";
 import avatarImg from "./B2933BD8-A2A7-4776-954C-5CC68438B4AA.png";
 import searchAlgoImg from "./search_algorithms.png";
+import starmanImg from "./starman_homepage.png";
 
 export {
   avatarImg,
@@ -14,4 +15,5 @@ export {
   nextJSLogoLight,
   newspapernotesImg,
   searchAlgoImg,
+  starmanImg,
 };
