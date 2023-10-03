@@ -27,7 +27,7 @@ const Project = () => {
                 width={400}
               ></Image>
               <div className="flex flex-col md:p-10 pb-2">
-                <h2 className="hidden md:flex items-center gap-2 font-bold font text-left  md:text-center text-xl md:text-3xl p-5">
+                <h2 className="hidden md:flex items-center gap-2 font-bold font text-left  md:text-center text-xl md:text-3xl py-5">
                   <a className="hover:md:underline" href={project.demoUrl}>
                     {project.title}
                   </a>
