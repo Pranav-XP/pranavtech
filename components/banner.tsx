@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 const Banner = () => {
   return (
-    <section className="flex-col items-center sm:flex pt-20 pb-10 md:pb-20">
+    <section className="flex-col items-center sm:flex pt-16 pb-10 md:pb-20">
       <div className="flex gap-1 items-center">
         <div className="flex flex-col text-left gap-y-5">
           <motion.h3

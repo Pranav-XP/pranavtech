@@ -98,10 +98,6 @@ export const projects = [
       },
       {
         id: 3,
-        skill: "Analysis",
-      },
-      {
-        id: 4,
         skill: "Matlab",
       },
     ],

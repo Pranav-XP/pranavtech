@@ -7,37 +7,44 @@ const Project = () => {
   return (
     <section id="projects" className="pb-10">
       <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
-      <div className="flex flex-col items-center justify-center md:p-5 w-full">
+      <div className="flex flex-col items-center justify-center md:px-16 py-5 w-full">
         {projects.map((project) => (
-          <div className="p-5" key={project.id}>
-            <h2 className="flex items-center gap-2 font-bold text-left hover:md:underline md:text-center text-xl md:text-3xl p-5">
-              <a href={project.demoUrl}>{project.title}</a>
-              <ExternalLink size={20} />
-            </h2>
-
+          <div className="py-5" key={project.id}>
             <div
               className="flex flex-col lg:flex-row justify-center items-center
-            md:border dark:md:border-stone-600 border shadow-glow  border-stone-600 rounded-lg p-10 text-left"
+            md:border border shadow-glow  border-stone-400 rounded-lg p-5 text-left"
             >
+              <h2 className="md:hidden text-2xl items-center pb-1 flex gap-2 font-bold self-start text-left">
+                <a className="hover:md:underline" href={project.demoUrl}>
+                  {project.title}
+                </a>
+                <ExternalLink size={20} />
+              </h2>
               <Image
-                className="rounded-md border dark:border-none w-50 items-center p-1"
+                className="rounded-md border dark:border-none w-fit items-center p-1"
                 src={project.screenshot}
                 alt="Project image"
                 width={400}
               ></Image>
-              <div className="font-mono md:p-10 pb-2">
-                {project.description} <br />
-                <div className="flex flex-row gap-3">
+              <div className="flex flex-col md:p-10 pb-2">
+                <h2 className="hidden md:flex items-center gap-2 font-bold font text-left  md:text-center text-xl md:text-3xl p-5">
+                  <a className="hover:md:underline" href={project.demoUrl}>
+                    {project.title}
+                  </a>
+                  <ExternalLink size={20} />
+                </h2>
+                <p className="font-mono">{project.description}</p> <br />
+                <div className="flex flex-row flex-wrap justify-start items-center gap-3 p-1">
                   {project.toolsApplied.map((tool) => (
                     <div
                       key={tool.id}
-                      className="hidden h-fit text-stone-800 font-bold border border-stone-300 md:inline md:text-center md:bg-stone-300 md:m-1 md:p-2 p-1 rounded-sm"
+                      className="text-sm font-mono px-1 text-stone-800 font-bold border border-stone-700 flex text-center bg-stone-100  rounded-sm"
                     >
                       {tool.skill}
                     </div>
                   ))}
                 </div>
-                <div className="underline font-semibold justify-center md:justify-normal mt-2 md:mt-5 md:hover:underline flex flex-row gap-1 items-center">
+                <div className="underline font-mono font-semibold justify-center md:justify-normal mt-2 md:mt-5 md:hover:underline flex flex-row gap-1 items-center">
                   <a href={project.codeUrl}>Github</a>
                   <Github />
                 </div>
