@@ -25,7 +25,7 @@ const Sidebar = () => {
         <SheetContent className="w-[250px] h-full" side={"left"}>
           <div className="flex flex-col gap-y-10 items-center justify-between pt-5">
             <Image
-              className="dark:border-0 dark:shadow-none rounded-md border border-stone-400 shadow-sm shadow-neutral-600"
+              className="rounded-md border border-stone-400 shadow-sm shadow-neutral-600"
               src={logo}
               alt="logo"
               width={40}
