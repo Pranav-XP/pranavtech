@@ -65,10 +65,9 @@ const Navbar = () => {
         ))}
         <ThemeSwitch />
       </div>
-      <Avatar className="sm:hidden">
-        <Image src={avatarImg} alt="Memeoji of Pranav" />
-        <AvatarFallback>PC</AvatarFallback>
-      </Avatar>
+      <span className="sm:hidden">
+        <ThemeSwitch />
+      </span>
     </nav>
   );
 };

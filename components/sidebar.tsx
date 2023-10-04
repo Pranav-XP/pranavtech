@@ -59,7 +59,6 @@ const Sidebar = () => {
                 </div>
               </div>
             </div>
-            <ThemeSwitch />
           </div>
         </SheetContent>
       </Sheet>

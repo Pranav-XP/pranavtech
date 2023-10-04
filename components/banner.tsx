@@ -59,8 +59,8 @@ const Banner = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <Button
-                className=" dark:shadow-none shadow-stone-500 shadow-md text-md active:shadow-inset w-52 h-14 font-titleFont font-bold
-                    rounded-md tracking-wide active:bg-foreground md:hover:drop-shadow-glow md:transition md:duration-700 md:ease-in-out"
+                className="dark:shadow-inner dark:shadow-zinc-400 shadow-stone-500 shadow-md text-md active:shadow-inset w-52 h-14 font-titleFont font-bold
+                    rounded-md tracking-wide active:bg-foreground md:hover:drop-shadow-glow md:transition-all dark:active:drop-shadow-none dark:md:hover:bg-white dark:md:active:shadow-zinc-800 md:duration-700 md:ease-in-out"
               >
                 <a href="https://github.com/Pranav-XP/pranavtech">
                   View Website Code
@@ -69,8 +69,9 @@ const Banner = () => {
               <p className="text-sm text-stone-600 dark:text-zinc-400 py-3">
                 Need a website as cool as this one? Shoot me an{" "}
                 <a className="underline" href="mailto:pranavchand777@gmail.com">
-                  email.
+                  email
                 </a>
+                .
               </p>
             </motion.div>
           </div>
