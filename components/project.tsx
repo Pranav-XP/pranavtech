@@ -1,6 +1,7 @@
 import { projects } from "@/lib/utils";
 import { ExternalLink, Github, ShareIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Project = () => {
@@ -14,18 +15,20 @@ const Project = () => {
               className="flex flex-col lg:flex-row justify-center items-center
             md:border border shadow-glow  border-stone-400 rounded-lg p-5 text-left"
             >
-              <h2 className="md:hidden text-2xl items-center pb-1 flex gap-2 font-bold self-start text-left">
+              <h2 className="md:hidden text-2xl items-center pb-2 flex gap-2 font-bold self-start text-left">
                 <a className="hover:md:underline" href={project.demoUrl}>
                   {project.title}
                 </a>
                 <ExternalLink size={20} />
               </h2>
-              <Image
-                className="rounded-md border dark:border-none w-fit items-center p-1"
-                src={project.screenshot}
-                alt="Project image"
-                width={400}
-              ></Image>
+              <a href={project.demoUrl} className="w-full p-3">
+                <Image
+                  className="border dark:border-none rounded-md w-full items-center"
+                  src={project.screenshot}
+                  alt="Project image"
+                  width={400}
+                ></Image>
+              </a>
               <div className="flex flex-col md:p-10 pb-2">
                 <h2 className="hidden md:flex items-center gap-2 font-bold font text-left  md:text-center text-xl md:text-3xl py-5">
                   <a className="hover:md:underline" href={project.demoUrl}>
