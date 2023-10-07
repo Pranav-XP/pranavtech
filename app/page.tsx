@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col overflow-hidden">
       <div className="flex justify-between">
         <aside className="hidden md:flex pl-2 fixed left-1 top-1/2">
           <LeftSide />
