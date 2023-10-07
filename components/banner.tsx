@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 const Banner = () => {
   return (
-    <section className="flex-col items-center justify-center sm:flex pt-16 pb-10 md:px-10 xl:pb-20">
+    <section className="flex-col sm:items-center sm:justify-center sm:flex pt-16 pb-10 md:px-10 xl:pb-20">
       <div className="flex gap-5 items-center">
         <div className="flex flex-col text-left gap-y-5">
           <motion.h3
@@ -98,7 +98,7 @@ const Banner = () => {
         className=""
       >
         <Image
-          className="sm:hidden xl:hover:drop-shadow-glow transition duration-700 ease-in-out"
+          className=" mx-auto sm:hidden xl:hover:drop-shadow-glow transition duration-700 ease-in-out"
           src={profileImg}
           alt="Profile Image of Pranav"
           width={300}
