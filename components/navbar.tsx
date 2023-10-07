@@ -3,12 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import { ThemeSwitch } from "./theme-switch";
-import { avatarImg, logo } from "@/public/images/util";
+import { logo } from "@/public/images/util";
 import Sidebar from "./sidebar";
 import { routes } from "@/lib/utils";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const animateInVariant = {
   initial: {
@@ -37,7 +36,7 @@ const Navbar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="hidden sm:flex"
+        className="hidden md:flex"
       >
         <Image
           className="border border-stone-400 rounded-md"
@@ -48,7 +47,7 @@ const Navbar = () => {
         ></Image>
       </motion.div>
 
-      <div className="hidden sm:flex sm:items-center sm:justify-between gap-x-10">
+      <div className="hidden md:flex sm:items-center sm:justify-between gap-x-10">
         {routes.map((route, index) => (
           <motion.div
             variants={animateInVariant}
@@ -65,7 +64,7 @@ const Navbar = () => {
         ))}
         <ThemeSwitch />
       </div>
-      <span className="sm:hidden">
+      <span className="md:hidden">
         <ThemeSwitch />
       </span>
     </nav>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <div className="flex justify-between">
-        <aside className="hidden sm:flex pl-2 fixed left-1 top-1/2">
+        <aside className="hidden md:flex pl-2 fixed left-1 top-1/2">
           <LeftSide />
         </aside>
 
@@ -20,7 +20,7 @@ export default function Home() {
           <Tools />
         </section>
 
-        <aside className="hidden sm:flex pl-2 fixed right-2 top-1/2">
+        <aside className="hidden md:flex pl-2 fixed right-2 top-1/2">
           <RightSide />
         </aside>
       </div>

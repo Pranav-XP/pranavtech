@@ -19,10 +19,10 @@ const Tools = () => {
   return (
     <section id="tools" className="pb-20 flex flex-col items-center">
       <h1 className="text-3xl sm:text-5xl font-bold p-5">Tools</h1>
-      <p className="pb-5 font-mono text-left md:text-lg">
+      <p className="pb-5 font-mono text-left xl:text-lg">
         Technologies I am proficient with:
       </p>
-      <ul className="flex md:px-20 gap-5 md:gap-10 items-center justify-evenly flex-wrap">
+      <ul className="flex xl:px-20 gap-5 xl:gap-10 items-center justify-evenly flex-wrap">
         <li>
           <BiLogoJava size={60} />
         </li>

@@ -12,14 +12,13 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import { logo } from "@/public/images/util";
-import { ThemeSwitch } from "./theme-switch";
 import { NavRoute, routes } from "@/lib/utils";
 
 const Sidebar = () => {
   return (
-    <div className="sm:hidden">
+    <div className="md:hidden">
       <Sheet>
-        <SheetTrigger className="md:hidden p-2">
+        <SheetTrigger className="xl:hidden p-2">
           <Menu size={30} />
         </SheetTrigger>
         <SheetContent className="w-[250px] h-full" side={"left"}>

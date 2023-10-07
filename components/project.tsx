@@ -1,22 +1,21 @@
 import { projects } from "@/lib/utils";
 import { ExternalLink, Github, ShareIcon } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Project = () => {
   return (
-    <section id="projects" className="pb-10">
-      <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
-      <div className="flex flex-col items-center justify-center md:px-16 py-5 w-full">
+    <section id="projects" className="pb-10 md:px-10">
+      <h1 className="text-6xl xl:text-5xl font-bold">Projects</h1>
+      <div className="flex flex-col items-center justify-center xl:px-16 py-5 w-full">
         {projects.map((project) => (
-          <div className="py-5" key={project.id}>
+          <div className="py-5 " key={project.id}>
             <div
-              className="flex flex-col lg:flex-row justify-center items-center
-            md:border border shadow-glow  border-stone-400 rounded-lg p-5 text-left"
+              className="flex flex-col xl:flex-row justify-center items-center
+            xl:border border shadow-glow  border-stone-400 rounded-lg p-5 text-left"
             >
-              <h2 className="md:hidden text-2xl items-center pb-2 flex gap-2 font-bold self-start text-left">
-                <a className="hover:md:underline" href={project.demoUrl}>
+              <h2 className="xl:hidden text-2xl items-center pb-2 flex gap-2 font-bold self-start text-left">
+                <a className="hover:xl:underline" href={project.demoUrl}>
                   {project.title}
                 </a>
                 <ExternalLink size={20} />
@@ -29,9 +28,9 @@ const Project = () => {
                   width={400}
                 ></Image>
               </a>
-              <div className="flex flex-col md:p-10 pb-2">
-                <h2 className="hidden md:flex items-center gap-2 font-bold font text-left  md:text-center text-xl md:text-3xl py-5">
-                  <a className="hover:md:underline" href={project.demoUrl}>
+              <div className="flex flex-col xl:p-10 pb-2">
+                <h2 className="hidden xl:flex items-center gap-2 font-bold font text-left  xl:text-center text-xl xl:text-3xl py-5">
+                  <a className="hover:xl:underline" href={project.demoUrl}>
                     {project.title}
                   </a>
                   <ExternalLink size={20} />
@@ -47,7 +46,7 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-                <div className="underline font-mono font-semibold justify-center md:justify-normal mt-2 md:mt-5 md:hover:underline flex flex-row gap-1 items-center">
+                <div className="underline font-mono font-semibold justify-center xl:justify-normal mt-2 xl:mt-5 xl:hover:underline flex flex-row gap-1 items-center">
                   <a href={project.codeUrl}>Github</a>
                   <Github />
                 </div>
