@@ -2,6 +2,7 @@ import {
   newspapernotesImg,
   searchAlgoImg,
   starmanImg,
+  unifitImg,
 } from "@/public/images/util";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -75,6 +76,30 @@ export const projects = [
       {
         id: 3,
         skill: "CSS",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "UniFit",
+    demoUrl: "https://github.com/Pranav-XP/unifit-booking",
+    codeUrl: "https://github.com/Pranav-XP/unifit-booking",
+    screenshot: unifitImg,
+    description:
+      "A fullstack sports facility booking web app made with Spring WebMVC. Includes role based authentication and feature packed admin dashboard.",
+    framework: "Java",
+    toolsApplied: [
+      {
+        id: 1,
+        skill: "Java",
+      },
+      {
+        id: 2,
+        skill: "Springboot",
+      },
+      {
+        id: 3,
+        skill: "MySQL",
       },
     ],
   },
