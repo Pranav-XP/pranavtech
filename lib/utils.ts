@@ -1,7 +1,7 @@
 import {
   newspapernotesImg,
-  searchAlgoImg,
   starmanImg,
+  tspImg,
   unifitImg,
 } from "@/public/images/util";
 import { type ClassValue, clsx } from "clsx";
@@ -23,6 +23,30 @@ export type NavRoute = {
 };
 
 export const projects = [
+  {
+    id: 4,
+    title: "UniFit",
+    demoUrl: "https://github.com/Pranav-XP/unifit-booking",
+    codeUrl: "https://github.com/Pranav-XP/unifit-booking",
+    screenshot: unifitImg,
+    description:
+      "A fullstack sports facility booking web app made with Spring WebMVC. Includes role based authentication and feature packed admin dashboard.",
+    framework: "Java",
+    toolsApplied: [
+      {
+        id: 1,
+        skill: "Java",
+      },
+      {
+        id: 2,
+        skill: "Springboot",
+      },
+      {
+        id: 3,
+        skill: "MySQL",
+      },
+    ],
+  },
   {
     id: 1,
     title: "NewspaperNotes",
@@ -80,37 +104,13 @@ export const projects = [
     ],
   },
   {
-    id: 4,
-    title: "UniFit",
-    demoUrl: "https://github.com/Pranav-XP/unifit-booking",
-    codeUrl: "https://github.com/Pranav-XP/unifit-booking",
-    screenshot: unifitImg,
-    description:
-      "A fullstack sports facility booking web app made with Spring WebMVC. Includes role based authentication and feature packed admin dashboard.",
-    framework: "Java",
-    toolsApplied: [
-      {
-        id: 1,
-        skill: "Java",
-      },
-      {
-        id: 2,
-        skill: "Springboot",
-      },
-      {
-        id: 3,
-        skill: "MySQL",
-      },
-    ],
-  },
-  {
     id: 2,
-    title: "Algorithm Analysis",
-    demoUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
-    codeUrl: "https://github.com/Pranav-XP/CS214-Search-Algorithms",
-    screenshot: searchAlgoImg,
+    title: "Travelling Salesman Problem",
+    demoUrl: "https://github.com/Pranav-XP/Travelling-Salesman-Problem",
+    codeUrl: "https://github.com/Pranav-XP/Travelling-Salesman-Problem",
+    screenshot: tspImg,
     description:
-      "Algorithm analysis terminal application. Performed analysis on binary, linear, interpolation and jump search on large dataset.",
+      "Implemented and analysed Dynamic Programming and Genetic Algorithm approach to solve Asymmetric Travelling Salesman Problem.",
     framework: "Java",
     toolsApplied: [
       {
