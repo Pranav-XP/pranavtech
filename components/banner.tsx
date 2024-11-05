@@ -62,8 +62,8 @@ const Banner = () => {
                 className="dark:shadow-inner dark:shadow-zinc-400 shadow-stone-500 shadow-md text-md active:shadow-inset w-52 h-14 font-titleFont font-bold
                     rounded-md tracking-wide active:bg-foreground xl:hover:drop-shadow-glow xl:transition-all dark:active:drop-shadow-none dark:xl:hover:bg-white dark:xl:active:shadow-zinc-800 xl:duration-700 xl:ease-in-out"
               >
-                <a href="https://github.com/Pranav-XP/pranavtech">
-                  View Website Code
+                <a href="https://github.com/Pranav-XP">
+                  Visit my Github
                 </a>
               </Button>
               <p className="text-sm text-stone-600 dark:text-zinc-400 py-3">
