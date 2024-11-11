@@ -26,11 +26,11 @@ export const projects = [
   {
     id: 4,
     title: "UniFit",
-    demoUrl: "https://github.com/Pranav-XP/unifit-booking",
-    codeUrl: "https://github.com/Pranav-XP/unifit-booking",
+    demoUrl: "https://github.com/Pranav-XP/unifit",
+    codeUrl: "https://github.com/Pranav-XP/unifit",
     screenshot: unifitImg,
     description:
-      "A fullstack sports facility booking web app made with Spring WebMVC. Includes role based authentication and feature packed admin dashboard.",
+      "A fullstack sports facility booking web app made with SpringBoot. Includes role based authentication and feature packed admin dashboard.",
     framework: "Java",
     toolsApplied: [
       {
