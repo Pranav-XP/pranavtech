@@ -6,7 +6,7 @@ import newspapernotesImg from "./newspaper_notes_homescreen.png";
 import avatarImg from "./B2933BD8-A2A7-4776-954C-5CC68438B4AA.png";
 import tspImg from "./tsp.jpg";
 import starmanImg from "./starman_homepage.png";
-import unifitImg from "./unifit_user.jpg";
+import unifitImg from "./unifit_home.png";
 
 export {
   avatarImg,
