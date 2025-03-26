@@ -1,7 +1,7 @@
 import {
+  grpcImg,
   newspapernotesImg,
   starmanImg,
-  tspImg,
   unifitImg,
 } from "@/public/images/util";
 import { type ClassValue, clsx } from "clsx";
@@ -105,12 +105,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Travelling Salesman Problem",
-    demoUrl: "https://github.com/Pranav-XP/Travelling-Salesman-Problem",
-    codeUrl: "https://github.com/Pranav-XP/Travelling-Salesman-Problem",
-    screenshot: tspImg,
+    title: "Distributed System",
+    demoUrl: "https://www.youtube.com/watch?v=GITvqPZMSEI",
+    codeUrl: "https://github.com/Pranav-XP/election-ring-grpc",
+    screenshot: grpcImg,
     description:
-      "Implemented and analysed Dynamic Programming and Genetic Algorithm approach to solve Asymmetric Travelling Salesman Problem.",
+      "Implemented Election Ring algorithm for a distributed system. Used gRPC for peer to peer communication.",
     framework: "Java",
     toolsApplied: [
       {
@@ -123,7 +123,7 @@ export const projects = [
       },
       {
         id: 3,
-        skill: "Matlab",
+        skill: "gRPC",
       },
     ],
   },
